@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 3-Column Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f5cd8f;
+            font-family: sans-serif;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .layout-container {
+            width: 800px;
+            background-color: #ffffff;
+            border: 2px solid #dcb274;
+            display: flex;
+            flex-direction: column;
+            min-height: 400px;
+        }
+
+        header {
+            padding: 20px;
+            border-bottom: 2px solid #d3d3d3;
+            font-weight: bold;
+        }
+
+        .main-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 150px;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .sidebar-a {
+            border-right: 2px solid #d3d3d3;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .sidebar-b {
+            border-left: 2px solid #d3d3d3;
+        }
+
+        footer {
+            padding: 20px;
+            border-top: 2px solid #d3d3d3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout-container">
+
+    <header>Header</header>
+
+    <div class="main-wrapper">
+        <aside class="sidebar sidebar-a">Sidebar A</aside>
+        <main class="main-content">Main content</main>
+        <aside class="sidebar sidebar-b">Sidebar B</aside>
+    </div>
+
+    <footer>Footer</footer>
+
+</div>
+
+</body>
+</html>
